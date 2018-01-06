@@ -36,7 +36,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = getWritableDatabase();
         // DB에 입력한 값으로 행 추가
-
         db.execSQL("INSERT INTO LOGININFO VALUES(null, '" + userId + "', '" + userName +"', '" + pictureUrl  +"');");
         db.close();
     }

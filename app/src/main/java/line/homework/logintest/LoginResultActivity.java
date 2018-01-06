@@ -33,7 +33,8 @@ public class LoginResultActivity extends Activity {
     private EditText userId;
     private EditText userName;
     private ImageView userPicture;
-    Bitmap bitmap_picture=null;
+    private Bitmap bitmap_picture=null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

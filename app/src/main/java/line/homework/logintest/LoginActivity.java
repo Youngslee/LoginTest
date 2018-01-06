@@ -24,11 +24,11 @@ import line.homework.logintest.test.DBHelper;
 public class LoginActivity extends Activity {
     private static final int REQUEST_CODE = 1;
     private DBHelper dbHelper;
+    private final String channelId = "1555845553";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
 
         // DBHelper class : 라인 프로필 관련 데이터베이스 관리 클래스
         dbHelper= new DBHelper(this.getApplicationContext(), "LoginInfo.db", null, 1);
@@ -50,10 +50,9 @@ public class LoginActivity extends Activity {
         loginButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-
                 try{
                     // App-to-app login
-                    Intent loginIntent = LineLoginApi.getLoginIntent(v.getContext(), "1555845553");
+                    Intent loginIntent = LineLoginApi.getLoginIntent(v.getContext(), channelId);
                     startActivityForResult(loginIntent, REQUEST_CODE);
                 }
                 catch(Exception e) {
