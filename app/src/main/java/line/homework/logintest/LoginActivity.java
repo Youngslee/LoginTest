@@ -1,3 +1,11 @@
+/*
+ * 클래스 이름 : LoginActivity
+ *  - 로그인 Activity
+ * 버전 정보
+ *
+ * 날짜 : 2018.01.06
+ *
+ */
 package line.homework.logintest;
 
 import android.app.Activity;
@@ -11,16 +19,6 @@ import com.linecorp.linesdk.LineProfile;
 import com.linecorp.linesdk.auth.LineLoginApi;
 import com.linecorp.linesdk.auth.LineLoginResult;
 
-import line.homework.logintest.test.DBHelper;
-
-/*
- * 클래스 이름 : LoginActivity
- *
- * 버전 정보
- *
- * 날짜 : 2018.01.06
- *
- */
 public class LoginActivity extends Activity {
     private static final int REQUEST_CODE = 1;
     private DBHelper dbHelper;
