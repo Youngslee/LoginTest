@@ -1,3 +1,12 @@
+/*
+ * 클래스 이름 : LoginResultActivity
+ *  - 로그인 결과 출력 Activity
+ * 버전 정보
+ *
+ * 날짜 : 2018.01.06
+ *
+ */
+
 package line.homework.logintest;
 
 import android.app.Activity;
@@ -17,14 +26,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-/*
- * 클래스 이름 : LoginResultActivity
- *
- * 버전 정보
- *
- * 날짜 : 2018.01.06
- *
- */
 
 public class LoginResultActivity extends Activity {
     private String intent_userId;
